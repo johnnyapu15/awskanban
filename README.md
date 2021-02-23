@@ -5,3 +5,4 @@ Inflearn의 https://www.inflearn.com/course/AWS-%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8
 * Lamdba folder의 login, authenticate 참고
 * Frontend folder의 api.js의 login 함수 참고
 * 결과물: https://dlbsry80yniw4.cloudfront.net/ , aws CloudFront.
+* 구조에 대한 글: https://www.notion.so/aws-lambda-API-GW-7b91a9ca5d92419991a090c147785a2a
