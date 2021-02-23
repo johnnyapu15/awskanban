@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AWS Kanban</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+<a id='login-trig' class="login-trigger" href="#" data-target="#login" data-toggle="modal">Login</a>
+    <div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div class="modal-body">
+        <button data-dismiss="modal" class="close">&times;</button>
+        <h4>Login</h4>
+        <form id = 'form'>
+          <input id = "un" type="text" name="username" class="username form-control" placeholder="Username"/>
+          <input id = "pw" type="password" name="password" class="password form-control" placeholder="password"/>
+          <input id = 'btn' class="btn login" value="Login" />
+        </form>
+      </div>
+    </div>
+  </div>  
+</div>
+
+    <nav>
+      <div></div>
+      <div>AWS Kaban Board</div>
+      <div></div>
+    </nav>
+
+
+
+
+    <div class="column-container">
+      <div class="column" data-card-category="todo">
+        <div class="column-header">
+          할 일
+        </div>
+        <div class="card card-create" onclick="createCard(event)">
+          +
+        </div>
+        <section class="card-container"></section>
+      </div>
+      <div class="column" data-card-category="ongoing">
+        <div class="column-header ongoing">
+          진행중
+        </div>
+        <div class="card card-create" onclick="createCard(event)">
+          +
+        </div>
+        <section class="card-container"></section>
+      </div>
+      <div class="column" data-card-category="test">
+        <div class="column-header test">
+          테스트
+        </div>
+        <div class="card card-create" onclick="createCard(event)">
+          +
+        </div>
+        <section class="card-container"></section>
+      </div>
+      <div class="column" data-card-category="done">
+        <div class="column-header done">
+          완료
+        </div>
+        <div class="card card-create" onclick="createCard(event)">
+          +
+        </div>
+        <section class="card-container"></section>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script type="module" src="index.js" tyle="text/javascript"></script>
+  </body>
+</html>
